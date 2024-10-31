@@ -24,6 +24,12 @@ public class Main {
         else {
             System.out.println("2 isn't a part of Arraylist");
         }
+        if(indexOf(arrayList,5)){
+            System.out.println("5 is a part of Arraylist");
+        }
+        else {
+            System.out.println("5 isn't a part of Arraylist");
+        }
 
     }
 
@@ -70,11 +76,10 @@ public class Main {
         l.addAll(result);
     }
     public static boolean indexOf(List<Integer> l, int x){
-        for (int i : l){
-            if (i == x){
-                return true;
-            }
+        if(l.contains(x)){
+            return true;
         }
-        return false;
+        else
+            return false;
     }
 }

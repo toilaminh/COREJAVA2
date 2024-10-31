@@ -66,14 +66,7 @@ public class Main {
         return min;
     }
     public static void del(List<Integer> l, int x){
-        List<Integer> result = new ArrayList<>();
-        for (int i : l){
-            if (i != x){
-                result.add(i);
-            }
-        }
-        l.clear();
-        l.addAll(result);
+        l.remove(x);
     }
     public static boolean indexOf(List<Integer> l, int x){
         if(l.contains(x)){
